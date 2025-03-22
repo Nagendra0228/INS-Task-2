@@ -79,5 +79,5 @@ cipher = Cipher(algorithms.AES(key), modes.CBC(iv))
 License
 This project is licensed under the MIT License.
 
-Author
-Developed by Nagendra Pai | Contact: painagendra0228@gmail.com
+# Author
+Developed by: Nagendra Pai | Contact: painagendra0228@gmail.com
