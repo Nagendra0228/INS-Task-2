@@ -62,11 +62,22 @@ cipher = Cipher(algorithms.AES(key), modes.CBC(iv))
 
 ## Security Considerations
 ### Mitigation Against Man-in-the-Middle (MITM) Attacks
-Digital Signatures: Used to authenticate RSA keys.
-Certificate-Based Authentication: Ensures trusted communication.
-Authenticated Diffie-Hellman Key Exchange: Prevents impersonation.
+-**Digital Signatures:** Used to authenticate RSA keys.
+-**Certificate-Based Authentication:** Ensures trusted communication.
+-**Authenticated Diffie-Hellman Key Exchange:** Prevents impersonation.
 
 ### Protection Against Key Compromise
-Periodic Key Rotation: Reduces the risk of key exposure.
-Encrypted Key Storage: Prevents unauthorized access.
-Automated Key Revocation: Ensures compromised keys are invalidated.
+-**Periodic Key Rotation:** Reduces the risk of key exposure.
+-**Encrypted Key Storage:** Prevents unauthorized access.
+-**Automated Key Revocation:** Ensures compromised keys are invalidated.
+
+## Future Enhancements
+-Quantum-Resistant Cryptography for long-term security.
+-Blockchain-based Key Management for decentralized trust.
+-AI-Powered Intrusion Detection to prevent unauthorized access.
+
+License
+This project is licensed under the MIT License.
+
+Author
+Developed by Nagendra Pai | Contact: painagendra0228@gmail.com
