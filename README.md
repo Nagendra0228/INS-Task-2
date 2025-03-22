@@ -27,3 +27,46 @@ Ensure you have Python 3.8+ installed. Install the required dependencies using:
 
 ```bash
 pip install -r requirements.txt
+```
+
+## Usage
+### 1. Generating RSA Keys
+```python
+from cryptography.hazmat.primitives.asymmetric import rsa
+from cryptography.hazmat.primitives import serialization
+
+private_key = rsa.generate_private_key(
+    public_exponent=65537,
+    key_size=2048
+)from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
+import os
+
+key = os.urandom(32)  # 256-bit AES key
+iv = os.urandom(16)   # Initialization Vector
+
+cipher = Cipher(algorithms.AES(key), modes.CBC(iv))
+
+public_key = private_key.public_key()
+```
+
+### 2. AES Encryption Example
+```python
+from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
+import os
+
+key = os.urandom(32)  # 256-bit AES key
+iv = os.urandom(16)   # Initialization Vector
+
+cipher = Cipher(algorithms.AES(key), modes.CBC(iv))
+```
+
+## Security Considerations
+### Mitigation Against Man-in-the-Middle (MITM) Attacks
+Digital Signatures: Used to authenticate RSA keys.
+Certificate-Based Authentication: Ensures trusted communication.
+Authenticated Diffie-Hellman Key Exchange: Prevents impersonation.
+
+### Protection Against Key Compromise
+Periodic Key Rotation: Reduces the risk of key exposure.
+Encrypted Key Storage: Prevents unauthorized access.
+Automated Key Revocation: Ensures compromised keys are invalidated.
