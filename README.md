@@ -1,5 +1,8 @@
 # Secure Key Management System (SKMS)
 
+## Google Colab Notebook  
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1KSNEY1-4qhB8zJ1JVBdGf9a_khT7qNXk?usp=sharing)
+
 ## **Overview**
 The Secure Key Management System (SKMS) is designed to manage cryptographic keys securely, ensuring **key generation, storage, exchange, and revocation**. This system supports both **symmetric (AES)** and **asymmetric encryption (RSA, Diffie-Hellman)** to protect communication and data integrity.
 
